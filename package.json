@@ -1,0 +1,19 @@
+{
+  "name": "throttle-riot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Throttle Riot - arcade motorcycle combat racing (web + Android wrapper)",
+  "scripts": {
+    "www": "rm -rf www && mkdir -p www && cp index.html manifest.json sw.js www/ && cp -r icons www/",
+    "android:add": "npm run www && npx cap add android",
+    "android:sync": "npm run www && npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "appId": "com.throttleriot.game",
+  "appName": "Throttle Riot",
+  "webDir": "www",
+  "android": { "backgroundColor": "#2a1433" }
+}
